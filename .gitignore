@@ -1,0 +1,23 @@
+# Virtual environments
+ats/
+venv/
+env/
+
+# ML models
+ml_model/
+models/
+checkpoints/
+
+# Model files
+*.safetensors
+*.pt
+*.pth
+*.bin
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Logs
+logs/
+*.log
