@@ -8,11 +8,20 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 
 # Configure page
 st.set_page_config(
-    page_title="ATS Resume Scorer",
-    page_icon="🎯",
+    page_title="Hiresync - Resume ATS Scorer",
+    page_icon="https://res.cloudinary.com/dqygwpst9/image/upload/v1790654488/ChatGPT_Image_Sep_29_2026_09_08_23_AM_iit1g9.png",
     layout="wide",
     initial_sidebar_state="expanded"
 )
+
+st.markdown("""
+    <style>
+    #MainMenu {visibility: hidden;}
+    .stDeployButton {display: none;}
+    header {visibility: hidden;}
+    footer {visibility: hidden;}
+    </style>
+""", unsafe_allow_html=True)
 
 # Auth state. Populated by Supabase sign-in / sign-up / OAuth.
 # All four are None when signed out, all four are set when signed in.

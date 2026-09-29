@@ -22,11 +22,13 @@ def render():
         }
     </style>
     """, unsafe_allow_html=True)
+
+    logo_url = "https://res.cloudinary.com/dqygwpst9/image/upload/v1790654499/ChatGPT_Image_Sep_29_2026_09_06_49_AM_ewas6w.png"
     
     # Hero Section
     st.markdown("""
     <div class="main-header">
-        <h1>🎯 ATS Resume Scorer</h1>
+        <img src="{logo_url}" style='height:100vh'>
         <h3>Optimize Your Resume for Applicant Tracking Systems</h3>
         <p>Get instant feedback on your resume's ATS compatibility with AI-powered analysis</p>
     </div>
