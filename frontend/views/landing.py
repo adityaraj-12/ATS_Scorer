@@ -23,7 +23,7 @@ def render():
     </style>
     """, unsafe_allow_html=True)
 
-    logo_url = "https://res.cloudinary.com/dqygwpst9/image/upload/v1790654499/ChatGPT_Image_Sep_29_2026_09_06_49_AM_ewas6w.png"
+    logo_url = "https://res.cloudinary.com/dqygwpst9/image/upload/v1790656286/ChatGPT_Image_Sep_29_2026_10_00_58_AM_dorucs.png"
     
     # Hero Section
     st.markdown(f"""
