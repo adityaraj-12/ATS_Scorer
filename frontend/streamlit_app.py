@@ -71,8 +71,27 @@ st.markdown(load_css(), unsafe_allow_html=True)
 if 'current_view' not in st.session_state:
     st.session_state.current_view = 'landing'
 
-# Account controls remain in the sidebar, which Streamlit may collapse on mobile.
+# Sidebar navigation
 with st.sidebar:
+    st.markdown("## Navigation")
+    
+    if st.button("🏠 Home", use_container_width=True):
+        st.session_state.current_view = 'landing'
+        st.rerun()
+    
+    if st.button("🎯 ATS Scorer", use_container_width=True):
+        st.session_state.current_view = 'scorer'
+        st.rerun()
+    
+    if st.button("📊 History", use_container_width=True):
+        st.session_state.current_view = 'history'
+        st.rerun()
+    
+    if st.button("📚 Resources", use_container_width=True):
+        st.session_state.current_view = 'resources'
+        st.rerun()
+    
+    st.markdown("---")
     st.markdown("### 👤 Account")
 
     from frontend.services import supabase_client
@@ -144,18 +163,6 @@ with st.sidebar:
                 url=oauth["url"],
                 use_container_width=True,
             )
-
-# Keep navigation available in the main page when the sidebar is collapsed.
-with st.popover("☰ Menu"):
-    for label, view in [
-        ("🏠 Home", "landing"),
-        ("🎯 ATS Scorer", "scorer"),
-        ("📊 History", "history"),
-        ("📚 Resources", "resources"),
-    ]:
-        if st.button(label, use_container_width=True):
-            st.session_state.current_view = view
-            st.rerun()
 
 # Main content area - render based on current view
 if st.session_state.current_view == 'landing':
