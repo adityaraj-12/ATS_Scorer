@@ -14,14 +14,14 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-st.markdown("""
-    <style>
-    #MainMenu {visibility: hidden;}
-    .stDeployButton {display: none;}
-    header {visibility: hidden;}
-    footer {visibility: hidden;}
-    </style>
-""", unsafe_allow_html=True)
+# st.markdown("""
+#     <style>
+#     #MainMenu {visibility: hidden;}
+#     .stDeployButton {display: none;}
+#     header {visibility: hidden;}
+#     footer {visibility: hidden;}
+#     </style>
+# """, unsafe_allow_html=True)
 
 # Auth state. Populated by Supabase sign-in / sign-up / OAuth.
 # All four are None when signed out, all four are set when signed in.
