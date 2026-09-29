@@ -27,8 +27,8 @@ def render():
     
     # Hero Section
     st.markdown("""
-    <div class="main-header">
-        <img src="{logo_url}" style='height:100vh'>
+    <div style="display: flex; flex-direction:column; align-items:center; justify-content:center; margin-bottom:30px; margin-top:30px">
+        <img src="{logo_url}" style='height:100px;'>
         <h3>Optimize Your Resume for Applicant Tracking Systems</h3>
         <p>Get instant feedback on your resume's ATS compatibility with AI-powered analysis</p>
     </div>
