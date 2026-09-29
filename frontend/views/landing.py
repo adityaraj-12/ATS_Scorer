@@ -26,7 +26,7 @@ def render():
     logo_url = "https://res.cloudinary.com/dqygwpst9/image/upload/v1790654499/ChatGPT_Image_Sep_29_2026_09_06_49_AM_ewas6w.png"
     
     # Hero Section
-    st.markdown("""
+    st.markdown(f"""
     <div style="display: flex; flex-direction:column; align-items:center; justify-content:center; margin-bottom:30px; margin-top:30px">
         <img src="{logo_url}" style='height:100px;'>
         <h3>Optimize Your Resume for Applicant Tracking Systems</h3>
